@@ -1,0 +1,7 @@
+book_filename: "COVID-CABA"
+chapter_name: ""
+repo: https://github.com/raccamateo/informe_COVID_CABA
+output_dir: docs
+rmd_files: ["informe_covid_CABA.Rmd"]
+clean: [packages.bib, bookdown.bbl]
+new_session: yes
