@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Conclusiones | La pandemia en la ciudad, en datos</title>
+  <meta name="description" content="3 Conclusiones | La pandemia en la ciudad, en datos" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Conclusiones | La pandemia en la ciudad, en datos" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Conclusiones | La pandemia en la ciudad, en datos" />
+  
+  
+  
+
+<meta name="author" content="Mateo W. Racca" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="desarrollo.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">COVID-CABA</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="desarrollo.html"><a href="desarrollo.html"><i class="fa fa-check"></i><b>2</b> Desarrollo</a><ul>
+<li class="chapter" data-level="2.1" data-path="desarrollo.html"><a href="desarrollo.html#librerías"><i class="fa fa-check"></i><b>2.1</b> Librerías</a></li>
+<li class="chapter" data-level="2.2" data-path="desarrollo.html"><a href="desarrollo.html#ciudad-de-buenos-aires"><i class="fa fa-check"></i><b>2.2</b> Ciudad de Buenos Aires</a></li>
+<li class="chapter" data-level="2.3" data-path="desarrollo.html"><a href="desarrollo.html#movilidad"><i class="fa fa-check"></i><b>2.3</b> Movilidad</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="desarrollo.html"><a href="desarrollo.html#movilidad-en-tiendas-y-lugares-de-ocio---caba"><i class="fa fa-check"></i><b>2.3.1</b> Movilidad en tiendas y lugares de ocio - CABA:</a></li>
+<li class="chapter" data-level="2.3.2" data-path="desarrollo.html"><a href="desarrollo.html#movilidad-en-supermercados-y-farmacias"><i class="fa fa-check"></i><b>2.3.2</b> Movilidad en supermercados y farmacias</a></li>
+<li class="chapter" data-level="2.3.3" data-path="desarrollo.html"><a href="desarrollo.html#movilidad-en-parques"><i class="fa fa-check"></i><b>2.3.3</b> Movilidad en parques</a></li>
+<li class="chapter" data-level="2.3.4" data-path="desarrollo.html"><a href="desarrollo.html#movilidad-en-estaciones-de-transporte"><i class="fa fa-check"></i><b>2.3.4</b> Movilidad en estaciones de transporte</a></li>
+<li class="chapter" data-level="2.3.5" data-path="desarrollo.html"><a href="desarrollo.html#movilidad-en-lugares-de-trabajo"><i class="fa fa-check"></i><b>2.3.5</b> Movilidad en lugares de trabajo</a></li>
+<li class="chapter" data-level="2.3.6" data-path="desarrollo.html"><a href="desarrollo.html#movilidad-en-zonas-residenciales"><i class="fa fa-check"></i><b>2.3.6</b> Movilidad en zonas residenciales</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="desarrollo.html"><a href="desarrollo.html#covid-19-en-la-ciudad-de-buenos-aires-infraestructura-movilidad-operativos-y-casos"><i class="fa fa-check"></i><b>2.4</b> COVID-19 en la Ciudad de Buenos Aires: infraestructura, movilidad, operativos y casos</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="desarrollo.html"><a href="desarrollo.html#operativo-detectar"><i class="fa fa-check"></i><b>2.4.1</b> Operativo DetectAR</a></li>
+<li class="chapter" data-level="2.4.2" data-path="desarrollo.html"><a href="desarrollo.html#sube"><i class="fa fa-check"></i><b>2.4.2</b> SUBE</a></li>
+<li class="chapter" data-level="2.4.3" data-path="desarrollo.html"><a href="desarrollo.html#flujo-vehicular"><i class="fa fa-check"></i><b>2.4.3</b> Flujo Vehicular</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="desarrollo.html"><a href="desarrollo.html#reportes-de-casos-de-covid-19"><i class="fa fa-check"></i><b>2.5</b> Reportes de casos de COVID-19</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="desarrollo.html"><a href="desarrollo.html#hisopados"><i class="fa fa-check"></i><b>2.5.1</b> Hisopados</a></li>
+<li class="chapter" data-level="2.5.2" data-path="desarrollo.html"><a href="desarrollo.html#positividad-de-hisopados"><i class="fa fa-check"></i><b>2.5.2</b> Positividad de hisopados</a></li>
+<li class="chapter" data-level="2.5.3" data-path="desarrollo.html"><a href="desarrollo.html#test-rápidos-y-pcr"><i class="fa fa-check"></i><b>2.5.3</b> Test Rápidos y PCR</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="desarrollo.html"><a href="desarrollo.html#total-casos-confirmados"><i class="fa fa-check"></i><b>2.6</b> Total: Casos Confirmados</a></li>
+<li class="chapter" data-level="2.7" data-path="desarrollo.html"><a href="desarrollo.html#camas"><i class="fa fa-check"></i><b>2.7</b> Camas</a></li>
+<li class="chapter" data-level="2.8" data-path="desarrollo.html"><a href="desarrollo.html#casos"><i class="fa fa-check"></i><b>2.8</b> Casos</a></li>
+<li class="chapter" data-level="2.9" data-path="desarrollo.html"><a href="desarrollo.html#fallecidxs"><i class="fa fa-check"></i><b>2.9</b> Fallecidxs</a></li>
+<li class="chapter" data-level="2.10" data-path="desarrollo.html"><a href="desarrollo.html#tweets"><i class="fa fa-check"></i><b>2.10</b> Tweets</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="conclusiones.html"><a href="conclusiones.html"><i class="fa fa-check"></i><b>3</b> Conclusiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="conclusiones.html"><a href="conclusiones.html#movilidad-1"><i class="fa fa-check"></i><b>3.1</b> Movilidad</a></li>
+<li class="chapter" data-level="3.2" data-path="conclusiones.html"><a href="conclusiones.html#transporte-público"><i class="fa fa-check"></i><b>3.2</b> Transporte Público</a></li>
+<li class="chapter" data-level="3.3" data-path="conclusiones.html"><a href="conclusiones.html#detectar"><i class="fa fa-check"></i><b>3.3</b> DetectAR</a></li>
+<li class="chapter" data-level="3.4" data-path="conclusiones.html"><a href="conclusiones.html#hisopados-1"><i class="fa fa-check"></i><b>3.4</b> Hisopados</a></li>
+<li class="chapter" data-level="3.5" data-path="conclusiones.html"><a href="conclusiones.html#test-rápidos-y-pcr-1"><i class="fa fa-check"></i><b>3.5</b> Test Rápidos y PCR</a></li>
+<li class="chapter" data-level="3.6" data-path="conclusiones.html"><a href="conclusiones.html#total-casos-confirmados-1"><i class="fa fa-check"></i><b>3.6</b> Total: Casos Confirmados</a></li>
+<li class="chapter" data-level="3.7" data-path="conclusiones.html"><a href="conclusiones.html#camas-graves"><i class="fa fa-check"></i><b>3.7</b> Camas Graves</a></li>
+<li class="chapter" data-level="3.8" data-path="conclusiones.html"><a href="conclusiones.html#fallecidxs-1"><i class="fa fa-check"></i><b>3.8</b> Fallecidxs</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/raccamateo/informe_COVID_CABA" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">La pandemia en la ciudad, en datos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="conclusiones" class="section level1">
+<h1><span class="header-section-number">3</span> Conclusiones</h1>
+<p>Respecto a la primera pregunta que intenta responder este trabajo, que es ¿qué datos hay disponibles?, los que fueron considerados más relevantes por el autor son los que se desarrollan en el trabajo. Por una cuestión puramente organizativa se tomó la decisión de trabajar con datos abiertos de la ciudad y no de la nación, ya que el tamaño de los datasets nacionales es mayor y hay que realizar más tareas de filtrado, y los datos de la ciudad (en algunos casos) tienen información específica que en este análisis puntual resulta útil.</p>
+<p>¿Los datos se pueden transformar en información? Sí, y eso es lo que se intenta demostrar en el desarrollo.</p>
+<p>¿Pueden los datos abiertos ayudarnos a entender mejor la realidad? En este caso, creo que sí, desde cuestiones relacionadas con la movilidad hasta de salud.</p>
+<p>Durante el proceso, se me dispararon algunas preguntas e intenté encontrarles respuestas:</p>
+<ul>
+<li><p>¿Podrían los datos ser constantes? Ya que hay veces en las que los datos en determinadas variables están incompletos.</p></li>
+<li><p>¿Sería útil incluir información sobre síntomas en los casos positivos de COVID-19? Creo importante destacar que esta es mi opinión, y que estoy convencido de que sí. Quizás estructurar preguntas sobre síntomas a quienes han sido infectadxs con el virus sea útil para tener registro. No estoy seguro de si es algo que pueda ser útil con fines predictivos porque de momento hay muchas cosas sobre el virus que se desconocen, pero creo que es mejor que esté disponible a que no.</p></li>
+<li><p>¿Podemos generalizar los datos de movilidad? No. ¿No? No. En las redes sociales vi muchos gráficos sobre la movilidad en Argentina que son cuanto menos capciosos. No puedo decir si esto se difunde así por desconocimiento o con intencionalidad, pero cuando se habla de los datos de movilidad de Google hay que entender que son estimaciones. Y que incluso a niveles locales estas estimaciones varían muchísimo. Esto se puede en los mapas de la Ciudad de Buenos Aires donde muchas veces las comunas tienen valores completamente diferentes más allá de su proximidad geográfica.</p></li>
+</ul>
+<div id="movilidad-1" class="section level2">
+<h2><span class="header-section-number">3.1</span> Movilidad</h2>
+<p>La movilidad en tiendas y lugares de ocio se redujo durante toda la situación de pandemia, tuvo su punto máximo durante los primeros dos meses en los que la movilidad fue hasta un 75% menor a lo que era la antigua normalidad, y si bien la circulación aumentó en los meses siguientes, siempre se mantuvo debajo del nivel de normalidad. Las comunas 1, 2, 3, 6, 7, 13 y 14 tienen durante todo momento menor movilidad que el resto de las comunas.</p>
+<p>La movilidad en parque cayó totalmente durante abril y mayo y comenzó a aumentar gradualmente desde junio. Las comunas con mayor cantidad de espacios verdes, como era de esperarse, son las que mostraron (y muestran) mayor incremento de movilidad. Desde mediado de agosto casi todos los barrios tienen a acercarse a niveles normales.</p>
+<p>Debido a las restricciones del transporte público, la movilidad en estaciones de transporte bajó hasta un 75% y se mantuvo baja hasta el momento en que este informe es publicado. Algo parecido sucede con la movilidad en lugares de trabajo, aunque esta aumenta durante el mes de agosto. Mi hipótesis es que esto tiene que ver con las flexibilizaciones de aperturas de comercios y bares.</p>
+<p>La movilidad en zonas residenciales es la única que reporta valores mayores a los normales durante el periodo de cuarentena o aislamiento.</p>
+</div>
+<div id="transporte-público" class="section level2">
+<h2><span class="header-section-number">3.2</span> Transporte Público</h2>
+<p>La semanas previas a que se declare la cuarentena, el uso de la tarjeta SUBE superaba los seis millones de usos por día, mientras que cuando se declara la cuarentena esos niveles caen debajo del millón y no vuelven a superar los dos millones. Los puntos mínimos se corresponden a los fines de semana y/o días feriados en los que parte de lxs trabajadorxs esenciales que usan el transporte público no trabajan.</p>
+</div>
+<div id="detectar" class="section level2">
+<h2><span class="header-section-number">3.3</span> DetectAR</h2>
+<p>La distribución de los puntos del operativo no parece casual, hay cuatro puntos DetectAR en la comuna 4, tres en las comunas 7 y 8, dos en las comunas 1, 2 y 3 y uno en las comunas 2, 5, 6, 9 y 14.</p>
+</div>
+<div id="hisopados-1" class="section level2">
+<h2><span class="header-section-number">3.4</span> Hisopados</h2>
+<p>El número de hisopados aumenta con el paso del tiempo, lo que quiere decir que se aumentó el número de testeos. Por otro lado, como se observa en el plot que muestra los hisopados por zonas/barrios, el número de hisopados es más alto en lugares considerados vulnerables, en los que las condiciones están más dadas para que haya mayor número de contagios.</p>
+<p>Algo curioso respecto a los hisopados diarios es que caen cada 4 o 5 días, por 2 o 3 días, suben y vuelven a caer, y así. A veces los puntos mínimos coinciden con el fin de semana, pero esto no ocurre siempre.</p>
+<p>En promedio, en la Ciudad de Buenos Aires se realizan 88 hisopados cada cien mil habitantes por día. Hasta el momento, se realizaron aproximadamente 8 hisopados cada 100 habitantes y desde principios de julio el número de hisopados se duplicó.</p>
+</div>
+<div id="test-rápidos-y-pcr-1" class="section level2">
+<h2><span class="header-section-number">3.5</span> Test Rápidos y PCR</h2>
+<p>Pasa algo similar a lo que con los hisopados. El número de test rápidos positivos cae cada 4 o 5 días por un período de 2 o 3, vuelve a la normalidad, cae y así. ¿Por qué? En este caso los valores mínimos corresponden a días del fin de semana y a feriados.</p>
+<p>El aumento de casos positivos (acumulados) detectados con Test Rápidos es progresivo y constante, sobre todo en personal de salud y de las fuerzas de seguridad. Lo mismo pasa con los detectados a través de la técnica PCR.</p>
+</div>
+<div id="total-casos-confirmados-1" class="section level2">
+<h2><span class="header-section-number">3.6</span> Total: Casos Confirmados</h2>
+<p>Si bien hay datos faltantes, queda claro que el número de casos acumulados es mayor en zonas vulnerables. Con esto se relaciona estrechamente el número mayor de testeos en esta zonas.</p>
+<p>En promedio, 8 de 10 personas contagiadas en la ciudad son menores de 59 años.</p>
+</div>
+<div id="camas-graves" class="section level2">
+<h2><span class="header-section-number">3.7</span> Camas Graves</h2>
+<p>El porcentaje total de ocupación de camas graves en la ciudad se mantiene en valores cercanos al 60%. El número de pacientes en camas cuya gravedad es moderada también se mantuvo constante entre julio y septiembre, y nunca superó el número mil. La cantidad de pacientes leves en hospitales fue y es baja en parte porque se derivaron a hoteles hospitales, donde la ocupación de camas bajó cerca de 1/3 durante la primera quincena de agosto.</p>
+</div>
+<div id="fallecidxs-1" class="section level2">
+<h2><span class="header-section-number">3.8</span> Fallecidxs</h2>
+<p>La edad promedio de las personas fallecidas oscila entre los 75 y 76 años, casi el 84% de las personas fallecidas son mayores de 60 años. Lo que confirma que las personas mayores son población de riesgo. Ahora, esto no quiere decir que por no ser mayores no debemos preocuparnos y tener todos los cuidados pertinentes.</p>
+<p>El número de personas fallecidas por día en la ciudad (y la situación en general, en casi todo el país) es preocupante.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="desarrollo.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
